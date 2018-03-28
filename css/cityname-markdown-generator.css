@@ -1,15 +1,10 @@
 @font-face {
     font-family: 'L1Font';
-    src: url('./L1.ttf');
+    src: url('../font/L1.ttf');
 }
 
-html {
+html, body {
     height: 100%;
-}
-
-body {
-    height: 100%;
-    font-size: 4em;
 }
 
 .container {
@@ -21,7 +16,7 @@ body {
 }
 
 body {
-    background-image: url('./french_landscape_blur.jpg');
+    background-image: url('../img/french_landscape_blur.jpg');
     background-size: cover;
     background-position: bottom;
     margin: 0;
@@ -38,6 +33,7 @@ body {
     -webkit-border-radius: 4px;
     border-radius: 4px;
     font-family: L1Font, Arial, serif;
+    font-size: 4em;
     color: black;
     text-align: center;
     background: #f2f2f2;
@@ -53,6 +49,7 @@ body {
     box-sizing: content-box;
     -webkit-border-radius: 4px;
     border-radius: 4px;
+    font-size: 3em;
     width: 3em;
     font-family: L1Font, Arial, serif;
     color: black;

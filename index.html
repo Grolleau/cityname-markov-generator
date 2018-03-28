@@ -2,7 +2,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="cityname-markdown-generator.css">
+    <link rel="stylesheet" type="text/css" href="css/cityname-markdown-generator.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -14,7 +14,7 @@
         };
 
         $.ajax({
-            url: 'towns.csv',
+            url: 'data/towns.csv',
             dataType: "text",
             success: function(data) {
                 cities = data.split(/\r?\n|\r/);
