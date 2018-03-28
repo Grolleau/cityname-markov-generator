@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'L1Font';
+    src: url('./L1.ttf');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-size: 4em;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: url('./french_landscape_blur.jpg');
+    background-size: cover;
+    background-position: bottom;
+    margin: 0;
+}
+
+.placename {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 20px;
+    overflow: hidden;;
+    word-break: normal;
+    border: 0.1em solid rgba(181, 9, 9, 1);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-family: L1Font, Arial, serif;
+    color: black;
+    text-align: center;
+    background: #f2f2f2;
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.road {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    width: 3em;
+    font-family: L1Font, Arial, serif;
+    color: black;
+    text-align: center;
+    background: yellow;
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.outer-board {
+    display: inline-block;
+    max-width: 60%;
+    min-width: 20%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 1px;
+    background: white;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tip {
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+@media all and (max-width: 599px) {
+    body {
+        font-size: 1.5em;
+    }
+    .outer-board {
+        max-width: inherit;
+        min-width: 35%;
+    }
+}

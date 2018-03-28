@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cityname-markdown-generator.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var cities = [];
+
+        var changeCity = function() {
+            let index = Math.floor(Math.random() * (cities.length));
+            $(".placename").text(cities[index]);
+        };
+
+        $.ajax({
+            url: 'towns.csv',
+            dataType: "text",
+            success: function(data) {
+                cities = data.split(/\r?\n|\r/);
+                changeCity();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <!--<div class="container">-->
+    <div class="container center">
+        <div class="road center">D25</div>
+        <div class="outer-board center">
+            <div class="placename" onclick="changeCity()">Text here</div>
+        </div>
+        <div>
+            <span class="tip">Click on the place-name sign to get a new city name</span>
+        </div>
+    </div>
+</body>
+
+</html>
