@@ -3,21 +3,20 @@
     src: url('../font/L1.ttf');
 }
 
-@media all and (max-width: 599px) {
-    .container .placename {
-        font-size: 1.5em;
-    }
-    .container .road {
-        font-size: 1em;
-    }
-    .outer-board {
-        max-width: inherit;
-        min-width: 35%;
-    }
+@media screen and (max-width: 640px),  screen and (max-height: 340px) {
+  body .container {
+      font-size: 0.5em;
+  }
+
+  .container .placename {
+      padding: 10px;
+  }
+
 }
 
 html, body {
     height: 100%;
+    font-size: 10px;
 }
 
 .container {
@@ -92,7 +91,6 @@ body {
 }
 
 .tip {
-    font-size: 10px;
     color: white;
     font-weight: bold;
 }
