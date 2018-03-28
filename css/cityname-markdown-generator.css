@@ -3,15 +3,18 @@
     src: url('../font/L1.ttf');
 }
 
-@media screen and (max-width: 640px),  screen and (max-height: 340px) {
+@media screen and (max-width: 640px),  screen and (max-height: 400px) {
   body .container {
-      font-size: 0.5em;
+      font-size: 0.3em;
   }
 
   .container .placename {
       padding: 10px;
   }
 
+  .container .outer-board {
+      max-width: none;
+  }
 }
 
 html, body {
