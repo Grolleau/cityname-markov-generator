@@ -3,6 +3,19 @@
     src: url('../font/L1.ttf');
 }
 
+@media all and (max-width: 599px) {
+    .container .placename {
+        font-size: 1.5em;
+    }
+    .container .road {
+        font-size: 1em;
+    }
+    .outer-board {
+        max-width: inherit;
+        min-width: 35%;
+    }
+}
+
 html, body {
     height: 100%;
 }
@@ -82,14 +95,4 @@ body {
     font-size: 10px;
     color: white;
     font-weight: bold;
-}
-
-@media all and (max-width: 599px) {
-    body {
-        font-size: 1.5em;
-    }
-    .outer-board {
-        max-width: inherit;
-        min-width: 35%;
-    }
 }
